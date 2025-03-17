@@ -1,0 +1,13 @@
+name: Build and Lint Docs
+
+on: push
+
+jobs: 
+  workflow: 
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+
+      # Checkout code
+      - name: Checkout
+        uses: actions/checkout@v4
